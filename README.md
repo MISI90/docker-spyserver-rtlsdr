@@ -38,4 +38,4 @@ All configuration for this Docker container is done via environmental variables 
 
 ### Rebuilding
 
-If you wish to rebuild this image for yourself, you can use the [Dockerfile](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/Dockerfile) provided. However, the image that exists on DockerHub was built using the Docker experimental `buildx` functionality to build the `arm32` version from a Mac. You can view the build command in the [Makefile](https://github.com/lloydpick/MISI90/docker-spyserver-rtlsdr/blob/master/Makefile).
+If you wish to rebuild this image for yourself, you can use the [Dockerfile](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/Dockerfile) provided. However, the image that exists on DockerHub was built using the Docker experimental `buildx` functionality to build the `arm32` version from a Mac. You can view the build command in the [Makefile](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/Makefile).
