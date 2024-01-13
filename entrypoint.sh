@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 
 CONFIG=/etc/spyserver/spyserver.config
 

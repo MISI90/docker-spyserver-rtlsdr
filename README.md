@@ -1,16 +1,16 @@
 # Docker AirSpy SpyServer
 
-Docker container for [AirSpy SpyServer](https://airspy.com/download), with support for x86 and arm32.
+Docker container for [AirSpy SpyServer](https://airspy.com/download), forked from container made by [lloydpick](https://github.com/lloydpick/docker-spyserver) with updated drivers for support for [RTL-SDR Blog V4](https://www.rtl-sdr.com/V4/) USB dongle.
 
-[![](https://images.microbadger.com/badges/version/lloydpick/spyserver.svg)](https://microbadger.com/images/lloydpick/spyserver "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/lloydpick/spyserver.svg)](https://microbadger.com/images/lloydpick/spyserver "Get your own image badge on microbadger.com") https://hub.docker.com/r/lloydpick/spyserver
+[Docker HUB](https://hub.docker.com/r/misi90/spyserver-rtlsdr)
 
 ## Summary
 
-The container provides you with the SpyServer application running on port 5555. It has been tested with an RTL-SDR R820T2 RTL2832U device on a Raspberry Pi 3 Model B+. There is a [docker-compose.yml](https://github.com/lloydpick/docker-spyserver/blob/master/docker-compose.yml) file should you want to see how to correctly mount the USB device.
+The container provides you with the SpyServer application running on port 5555. It has been tested with an RTL-SDR Blog V4 device. There is a [docker-compose.yml](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/docker-compose.yml) file should you want to see how to correctly mount the USB device.
 
 ### Example
 
-See [docker-compose.yml](https://github.com/lloydpick/docker-spyserver/blob/master/docker-compose.yml)
+See [docker-compose.yml](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/docker-compose.yml)
 
 ### Configuration
 
@@ -38,4 +38,4 @@ All configuration for this Docker container is done via environmental variables 
 
 ### Rebuilding
 
-If you wish to rebuild this image for yourself, you can use the [Dockerfile](https://github.com/lloydpick/docker-spyserver/blob/master/Dockerfile) provided. However, the image that exists on DockerHub was built using the Docker experimental `buildx` functionality to build the `arm32` version from a Mac. You can view the build command in the [Makefile](https://github.com/lloydpick/docker-spyserver/blob/master/Makefile).
+If you wish to rebuild this image for yourself, you can use the [Dockerfile](https://github.com/MISI90/docker-spyserver-rtlsdr/blob/master/Dockerfile) provided. However, the image that exists on DockerHub was built using the Docker experimental `buildx` functionality to build the `arm32` version from a Mac. You can view the build command in the [Makefile](https://github.com/lloydpick/MISI90/docker-spyserver-rtlsdr/blob/master/Makefile).
